@@ -10,3 +10,6 @@ node_modules/
 
 # Ignore temp files
 .DS_Store
+
+# Ignore environment variables
+.env

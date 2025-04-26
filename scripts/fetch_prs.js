@@ -1,6 +1,11 @@
 const axios = require('axios');
 const fs = require('fs');
-const { config } = require('./config.js');
+const { config } = require('./config');
+
+if (!config.token) {
+  console.error('❌ GitHub Token is missing. Please set GITHUB_TOKEN in your .env file.');
+  process.exit(1);
+}
 
 fs.mkdirSync('./data', { recursive: true }); 
 
