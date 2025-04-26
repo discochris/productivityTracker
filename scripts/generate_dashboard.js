@@ -1,8 +1,6 @@
 // generate_dashboard.js (updated to also create _print.html versions)
 const fs = require('fs');
 const path = require('path');
-const fs = require('fs');
-const path = require('path');
 
 let data = [];
 const mergedPrsPath = path.join(__dirname, '../data/merged_prs.json');

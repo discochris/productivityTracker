@@ -2,8 +2,14 @@ require('dotenv').config(); // if using dotenv
 const config = {
   token: process.env.GITHUB_TOKEN,
   repos: [
-    "wbd-streaming/gqa-automation",
-    "wbd-streaming/stb-tester-test-pack-hbo"
+    {
+      owner: "wbd-streaming",
+      name: "gqa-automation"
+    },
+    {
+      owner: "wbd-streaming",
+      name: "stb-tester-test-pack-hbo"
+    }
   ],
   teamMembers: [
     // "naveen-negi088",
