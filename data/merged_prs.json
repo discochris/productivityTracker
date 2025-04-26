@@ -1,0 +1,23 @@
+[
+  {
+    "author": "PooranSinghwbd",
+    "title": "[Max] [Android] [US] GQA-TC-27776 - Verify midroll ads available for Adfree user in live event",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17608",
+    "merged_at": "2025-04-24T12:30:00Z",
+    "repo": "gqa-automation"
+  },
+  {
+    "author": "PooranSinghwbd",
+    "title": "[Max] [Android] [US] GQA-TC-24512 - [Branded Discovery] Adult - New Session - Mp4 - Visual and Audio Checks - Themed Rail to Browse Collections Page  - Play Pre-roll Bumper & Pre-roll",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17451",
+    "merged_at": "2025-04-21T09:51:56Z",
+    "repo": "gqa-automation"
+  },
+  {
+    "author": "PooranSinghwbd",
+    "title": "[Test Scripting] [Max] [Android] [US] GQA-TC-27775 - Verify No prerolls ads for Adfree user in live event",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17314",
+    "merged_at": "2025-04-16T04:15:29Z",
+    "repo": "gqa-automation"
+  }
+]

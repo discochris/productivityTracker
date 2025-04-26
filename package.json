@@ -1,0 +1,20 @@
+{
+  "name": "pr-dashboard",
+  "version": "1.0.0",
+  "description": "GitHub PR dashboard",
+  "main": "scripts/fetch_prs.js",
+  "scripts": {
+    "fetch": "node scripts/fetch_prs.js",
+    "dashboard": "node scripts/generate_dashboard.js",
+    "screenshot": "node scripts/screenshot.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "csv-writer": "^1.6.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "playwright": "^1.41.1"
+  }
+}
