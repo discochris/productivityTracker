@@ -1,23 +1,362 @@
 [
   {
+    "author": "ravishobhit",
+    "title": "[Test Stability][AdTech] Fuse Max Automation Stability  5.13.0 Samsung",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17614",
+    "merged_at": "2025-04-24T10:29:26Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
     "author": "PooranSinghwbd",
     "title": "[Max] [Android] [US] GQA-TC-27776 - Verify midroll ads available for Adfree user in live event",
     "url": "https://github.com/wbd-streaming/gqa-automation/pull/17608",
     "merged_at": "2025-04-24T12:30:00Z",
-    "repo": "gqa-automation"
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "ravishobhit",
+    "title": "[Max] [CDEV] [BR] GQA-TC-19497 - 3a - BEAM - Adult - Continue watching - Validate ClientProperties when Device_AdTracking=Disabled and CMP_Advertising=OFF",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17572",
+    "merged_at": "2025-04-24T10:19:23Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "Web Runs Disable and cleanup",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17555",
+    "merged_at": "2025-04-23T06:30:52Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "Workflow cleanup",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17489",
+    "merged_at": "2025-04-21T13:33:33Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "raju-bhupathiraju",
+    "title": "[WorkFlow Update]Disable workflows for 5.13 regression",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17487",
+    "merged_at": "2025-04-21T13:13:05Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "WEb Stability 5.13",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17486",
+    "merged_at": "2025-04-21T13:00:33Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "Adtech workflows cleanup",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17471",
+    "merged_at": "2025-04-25T13:34:16Z",
+    "repo": "gqa-automation",
+    "status": "closed"
   },
   {
     "author": "PooranSinghwbd",
     "title": "[Max] [Android] [US] GQA-TC-24512 - [Branded Discovery] Adult - New Session - Mp4 - Visual and Audio Checks - Themed Rail to Browse Collections Page  - Play Pre-roll Bumper & Pre-roll",
     "url": "https://github.com/wbd-streaming/gqa-automation/pull/17451",
     "merged_at": "2025-04-21T09:51:56Z",
-    "repo": "gqa-automation"
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "raju-bhupathiraju",
+    "title": "[Stability Fix] OpenSearch Validation Fixes.",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17439",
+    "merged_at": "2025-04-17T13:06:14Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "busireddynaveen",
+    "title": "[Max] [Apple] [US] GQA-TC-24730 - Adult - Watch Live- STARTOVER- Catching up with the live point where they joined the stream",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17429",
+    "merged_at": "2025-04-17T12:17:38Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "ravishobhit",
+    "title": "[Test Scripting][Discovery+] [Roku] [US] GQA-TC-19493- 1a - BEAM - Adult - Continue watching - Validate ClientProperties when Device_AdTracking=Disabled and CMP_Advertising=ON",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17389",
+    "merged_at": "2025-04-17T06:54:03Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "ravishobhit",
+    "title": "[Test Scripting][Discovery+] [Roku] [US] GQA-TC-19491 4a - BEAM - Adult - Continue watching - Validate ClientProperties when Device_AdTracking=Disabled",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17366",
+    "merged_at": "2025-04-16T09:49:39Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "Workflow optimize1",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17362",
+    "merged_at": "2025-04-16T06:37:34Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "Workflow optimize1",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17357",
+    "merged_at": "2025-04-16T05:50:51Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "Workflow optimize1",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17355",
+    "merged_at": "2025-04-16T05:15:00Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "Workflow optimize | update 1",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17354",
+    "merged_at": "2025-04-16T05:04:52Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "POC | Combine Workflows | Automate build uploads",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17326",
+    "merged_at": "2025-04-15T11:37:59Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "busireddynaveen",
+    "title": "[AdTech] Fuse Max Automation Stability  5.12.0 iOS clip test cases",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17317",
+    "merged_at": "2025-04-16T05:33:32Z",
+    "repo": "gqa-automation",
+    "status": "closed"
   },
   {
     "author": "PooranSinghwbd",
     "title": "[Test Scripting] [Max] [Android] [US] GQA-TC-27775 - Verify No prerolls ads for Adfree user in live event",
     "url": "https://github.com/wbd-streaming/gqa-automation/pull/17314",
     "merged_at": "2025-04-16T04:15:29Z",
-    "repo": "gqa-automation"
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "ravishobhit",
+    "title": "[Test Scripting][Discovery+] [Roku] [US] GQA-TC-19503 - 7a - Adult - Continue watching - Validate ClientProperties when Device_AdTracking=Enabled and CMP_Advertising=ON",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17297",
+    "merged_at": "2025-04-15T06:12:37Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "busireddynaveen",
+    "title": "[Max] [Apple] [BR] GQA-TC-19771 - Adult-New session -Visual and Audio checks- Play a content which has no ad restriction in country",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17275",
+    "merged_at": "2025-04-15T05:48:46Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "raju-bhupathiraju",
+    "title": "[Workflow Update]Enabling Adtech workflows.",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17244",
+    "merged_at": "2025-04-11T10:35:56Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "naveen-negi088",
+    "title": "GQA-130374 [Test Script] [Max] [Apple] [US] [Branded Discovery]  GQA-TC-24507 Adult - New Session - Validate AdRequestURL when Device_AdTracking=Disabled and CMP_Advertising=OFF",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17242",
+    "merged_at": "2025-04-11T11:30:03Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "ravishobhit",
+    "title": "[Test Scripting][Discovery+] [Roku] [US] GQA-TC-19526 - 4 - Adult - New Session - Mp4 - Impressions & SlotImpressions - Scrubbing over Mid0 plays Mid0",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17241",
+    "merged_at": "2025-04-11T10:58:46Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "busireddynaveen",
+    "title": "[Max] [Apple] [US] GQA-TC-27776 - Verify midroll ads available for Adfree user in live event",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17220",
+    "merged_at": "2025-04-14T05:52:30Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "naveen-negi088",
+    "title": "GQA-131204 [Script fix] - tvOs- fix scrubbing functionality",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17184",
+    "merged_at": "2025-04-10T12:04:12Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "ADTECH | FUSE | DISCOVERY+ | US | P1 cases for browserstack devices",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17176",
+    "merged_at": "2025-04-10T11:58:50Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "busireddynaveen",
+    "title": "[Max] [Apple] [US] GQA-TC-27777 - Verify no Adtimer for midrolls ads",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17169",
+    "merged_at": "2025-04-10T11:31:14Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "ravishobhit",
+    "title": "[Test Stability] [AdTech][Roku] Fuse Max Automation Stability 5.12.0 Roku",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17163",
+    "merged_at": "2025-04-10T04:59:48Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "naveen-negi088",
+    "title": "GQA-125408 [Test Script] GQA-TC-19526 - 4 - Adult - New Session - Mp4 - Impressions & SlotImpressions  - Scrubbing over Mid0 plays Mid0",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17132",
+    "merged_at": "2025-04-10T05:39:32Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "naveen-negi088",
+    "title": "GQA-125407 [Test Script] [Max] [Apple] [PL] GQA-TC-19524 - 2 - Adult - Continue Watching - Mp4 - Does not play pre-rolls - No impressions/slot impressions",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17125",
+    "merged_at": "2025-04-09T08:33:30Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "animesh445",
+    "title": "GQA-125360: Adult - Watch Live - Validate AdRequest parameters when Device_AdTracking=Disabled and CMP_Advertising=OFF",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17095",
+    "merged_at": "2025-04-09T05:30:29Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "ADTECH | FUSE | DISCOVERY+ | US | P0 cases for browserstack devices",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17077",
+    "merged_at": "2025-04-08T05:46:01Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "balaganesh3093",
+    "title": "[Test Script] Adult - Watch Live - Impressions",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17055",
+    "merged_at": "2025-04-09T09:32:39Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "balaganesh3093",
+    "title": "[Script fix] Updated Clip test cases Tag",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17051",
+    "merged_at": "2025-04-07T12:28:42Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "raju-bhupathiraju",
+    "title": "disable workflows",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17020",
+    "merged_at": "2025-04-04T12:19:46Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "jugal-patel1",
+    "title": "Web BR and SE fix",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/17007",
+    "merged_at": "2025-04-04T09:06:16Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "balaganesh3093",
+    "title": "1.0",
+    "url": "https://github.com/wbd-streaming/gqa-automation/pull/16961",
+    "merged_at": "2025-04-04T11:06:48Z",
+    "repo": "gqa-automation",
+    "status": "closed"
+  },
+  {
+    "author": "animesh445",
+    "title": "GQA-125607: Verify midroll ads available for Adfree user in live event",
+    "url": "https://github.com/wbd-streaming/stb-tester-test-pack-hbo/pull/5039",
+    "merged_at": "2025-04-25T07:37:14Z",
+    "repo": "stb-tester-test-pack-hbo",
+    "status": "closed"
+  },
+  {
+    "author": "animesh445",
+    "title": "GQA-125616: Adult - New Session - No ads should play",
+    "url": "https://github.com/wbd-streaming/stb-tester-test-pack-hbo/pull/5021",
+    "merged_at": "2025-04-25T05:51:43Z",
+    "repo": "stb-tester-test-pack-hbo",
+    "status": "closed"
+  },
+  {
+    "author": "animesh445",
+    "title": "GQA-125612: Adult - New Session - No ads should play",
+    "url": "https://github.com/wbd-streaming/stb-tester-test-pack-hbo/pull/4996",
+    "merged_at": "2025-04-17T10:52:56Z",
+    "repo": "stb-tester-test-pack-hbo",
+    "status": "closed"
+  },
+  {
+    "author": "animesh445",
+    "title": "GQA-125560: Adult - Watch Live - Validate AdRequest parameters when Device_AdTracking=Enabled and CMP_Advertising=ON",
+    "url": "https://github.com/wbd-streaming/stb-tester-test-pack-hbo/pull/4979",
+    "merged_at": "2025-04-16T07:07:36Z",
+    "repo": "stb-tester-test-pack-hbo",
+    "status": "closed"
+  },
+  {
+    "author": "animesh445",
+    "title": "GQA-125559:  Adult - Watch Live - Validate AdRequest parameters when Device_AdTracking=Disabled and CMP_Advertising=ON",
+    "url": "https://github.com/wbd-streaming/stb-tester-test-pack-hbo/pull/4971",
+    "merged_at": "2025-04-14T11:16:54Z",
+    "repo": "stb-tester-test-pack-hbo",
+    "status": "closed"
+  },
+  {
+    "author": "animesh445",
+    "title": "GQA-125558: Adult - Watch Live - Validate AdRequest parameters when Device_AdTracking=Disabled and CMP_Advertising=OFF",
+    "url": "https://github.com/wbd-streaming/stb-tester-test-pack-hbo/pull/4970",
+    "merged_at": "2025-04-14T06:17:16Z",
+    "repo": "stb-tester-test-pack-hbo",
+    "status": "closed"
   }
 ]

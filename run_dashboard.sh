@@ -36,23 +36,12 @@ node scripts/parse_manual_test_report.js
 echo "🧠 Generating dashboard..."
 node scripts/generate_dashboard.js
 
-# Start local server in background (for PDF export via fetch)
-echo "🛰️  Starting local server..."
-python3 -m http.server --directory public 8000 > /dev/null 2>&1 &
-SERVER_PID=$!
-
-# Wait a moment for server to start
-sleep 2
-
-# Open dashboard in browser
+# Open dashboard directly in browser
 echo "🌐 Opening dashboard..."
-open "http://localhost:8000/dashboard.html"
+open "file://$(pwd)/public/dashboard.html"
 
 echo "✅ All done! Dashboard ready in browser."
 
-# Optional: Kill server after some time (optional safeguard)
-sleep 10
-kill "$SERVER_PID" > /dev/null 2>&1
-
-# Close Terminal window
+# Close Terminal window after a short delay
+sleep 1
 osascript -e 'tell application "Terminal" to close front window' & exit

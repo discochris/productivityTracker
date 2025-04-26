@@ -46,7 +46,8 @@ async function fetchMergedPRs(repo) {
         title: pr.title,
         url: pr.html_url,
         merged_at: pr.merged_at,
-        repo: name
+        repo: name,
+        status: pr.merged ? "Merged" : pr.state
       });
 
       // 🔍 Fetch Reviews for PR

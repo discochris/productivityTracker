@@ -40,13 +40,13 @@ module.exports = function generateDashboardPrintHTML({ totalPRMap, totalManualMa
 
   html += `</tbody></table>
   <h2>📛 Detailed Merged PRs</h2>
-  <table><thead><tr><th>Date</th><th>Author</th><th>Type</th><th>Title</th><th>Repo</th></tr></thead><tbody>`;
+  <table><thead><tr><th>Date</th><th>Author</th><th>Type</th><th>Status</th><th>Title</th><th>Repo</th></tr></thead><tbody>`;
 
   for (const pr of data.sort((a, b) => new Date(b.merged_at) - new Date(a.merged_at))) {
-    const date = pr.merged_at.slice(0, 10);
-    const type = classifyPR(pr.title);
-    html += `<tr><td>${date}</td><td>${pr.author}</td><td>${type}</td><td>${pr.title}</td><td>${pr.repo}</td></tr>`;
-  }
+  const date = pr.merged_at.slice(0, 10);
+  const type = classifyPR(pr.title);
+  html += `<tr><td>${date}</td><td>${pr.author}</td><td>${type}</td><td>${pr.status || "Merged"}</td><td>${pr.title}</td><td>${pr.repo}</td></tr>`;
+}
 
   html += `</tbody></table></body></html>`;
   return html;
