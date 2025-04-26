@@ -12,6 +12,9 @@ if (fs.existsSync(mergedPrsPath)) {
 }
 const { config } = require('./config.js');
 
+// Filter merged PRs for summary calculations (only use merged PRs for stats)
+const mergedPRs = data.filter(pr => pr.is_merged === true);
+
 function formatReadableDate(isoDate) {
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   return new Date(isoDate).toLocaleDateString('en-US', options);
@@ -49,9 +52,9 @@ const generateFacetedChartsPrintHTML = require('./partials/faceted_charts_print'
 const outputDir = path.join(__dirname, '../public');
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
 
-// Aggregation phase
+// Aggregation phase - USING MERGED PRS ONLY for summary data
 const sprintMap = {}, totalPRMap = {}, totalManualMap = {};
-for (const pr of data) {
+for (const pr of mergedPRs) {
   const mergedDate = pr.merged_at.slice(0, 10);
   const { start, end } = getSprintStart(mergedDate);
   const sprintKey = `${start} to ${end}`;
@@ -92,15 +95,52 @@ for (const [sprint, testers] of Object.entries(manualData)) {
 
 const readableStartDate = formatReadableDate(config.startDate);
 
+// Pass ALL PR data to the dashboard HTML generator, but only merged PRs data to the summary generators
 fs.writeFileSync(
   path.join(outputDir, 'dashboard.html'),
-  generateDashboardHTML({ totalPRMap, totalManualMap, manualData, data, classifyPR, readableStartDate,config, })
+  generateDashboardHTML({ 
+    totalPRMap, 
+    totalManualMap, 
+    manualData, 
+    data,  // All PRs for detailed view
+    mergedPRs, // Merged PRs only for summary tables
+    classifyPR, 
+    readableStartDate,
+    config, 
+  })
 );
-fs.writeFileSync(path.join(outputDir, 'sprint_comparison.html'), generateSprintComparisonHTML({ sprintMap, reviewData, manualData, getSprintStart }));
-fs.writeFileSync(path.join(outputDir, 'faceted_charts.html'), generateFacetedChartsHTML({ sprintMap, reviewData, manualData, getSprintStart }));
+
+fs.writeFileSync(
+  path.join(outputDir, 'sprint_comparison.html'), 
+  generateSprintComparisonHTML({ sprintMap, reviewData, manualData, getSprintStart })
+);
+
+fs.writeFileSync(
+  path.join(outputDir, 'faceted_charts.html'), 
+  generateFacetedChartsHTML({ sprintMap, reviewData, manualData, getSprintStart })
+);
 
 // === PRINTABLE VERSIONS ===
-fs.writeFileSync(path.join(outputDir, 'dashboard_print.html'), generateDashboardPrintHTML({ totalPRMap, totalManualMap, manualData, data, classifyPR }));
-fs.writeFileSync(path.join(outputDir, 'sprint_comparison_print.html'), generateSprintComparisonPrintHTML({ sprintMap, reviewData, manualData, getSprintStart }));
-fs.writeFileSync(path.join(outputDir, 'faceted_charts_print.html'), generateFacetedChartsPrintHTML({ sprintMap, reviewData, manualData, getSprintStart }));
+fs.writeFileSync(
+  path.join(outputDir, 'dashboard_print.html'), 
+  generateDashboardPrintHTML({ 
+    totalPRMap, 
+    totalManualMap, 
+    manualData, 
+    data,  // All PRs for detailed view
+    mergedPRs, // Merged PRs only for summary tables
+    classifyPR 
+  })
+);
+
+fs.writeFileSync(
+  path.join(outputDir, 'sprint_comparison_print.html'), 
+  generateSprintComparisonPrintHTML({ sprintMap, reviewData, manualData, getSprintStart })
+);
+
+fs.writeFileSync(
+  path.join(outputDir, 'faceted_charts_print.html'), 
+  generateFacetedChartsPrintHTML({ sprintMap, reviewData, manualData, getSprintStart })
+);
+
 console.log('✅ All dashboards and printable versions generated.');

@@ -1,5 +1,5 @@
 // partials/dashboard_print.js
-module.exports = function generateDashboardPrintHTML({ totalPRMap, totalManualMap, manualData, data, classifyPR }) {
+module.exports = function generateDashboardPrintHTML({ totalPRMap, totalManualMap, manualData, data, mergedPRs, classifyPR }) {
   let html = `<!DOCTYPE html><html><head><meta charset="UTF-8">
   <title>PR Dashboard (Print Version)</title>
   <style>
@@ -9,9 +9,12 @@ module.exports = function generateDashboardPrintHTML({ totalPRMap, totalManualMa
     th, td { border: 1px solid #000; padding: 8px; font-size: 14px; }
     th { background: #ddd; }
     a { color: black; text-decoration: none; }
+    .status-closed { color: #c62828 !important; font-weight: bold; }
+    .status-merged { color: #1565c0 !important; font-weight: bold; }
+    .status-open { color:rgb(198, 122, 40) !important; font-weight: bold; }
   </style></head><body>
   <h1>📊 PR Dashboard Summary</h1>
-  <h2>📉 Total PR Summary</h2>
+  <h2>📉 Total Closed PR Summary</h2>
   <table><thead><tr>
     <th>Author</th><th>Test Scripts</th><th>Workflow Updates</th><th>Script Fixes</th><th>POCs</th><th>Others</th><th>Reviews</th>
   </tr></thead><tbody>`;
@@ -39,14 +42,41 @@ module.exports = function generateDashboardPrintHTML({ totalPRMap, totalManualMa
   }
 
   html += `</tbody></table>
-  <h2>📛 Detailed Merged PRs</h2>
+  <h2>📋 Detailed Pull Requests</h2>
   <table><thead><tr><th>Date</th><th>Author</th><th>Type</th><th>Status</th><th>Title</th><th>Repo</th></tr></thead><tbody>`;
 
-  for (const pr of data.sort((a, b) => new Date(b.merged_at) - new Date(a.merged_at))) {
-  const date = pr.merged_at.slice(0, 10);
-  const type = classifyPR(pr.title);
-  html += `<tr><td>${date}</td><td>${pr.author}</td><td>${type}</td><td>${pr.status || "Merged"}</td><td>${pr.title}</td><td>${pr.repo}</td></tr>`;
-}
+  for (const pr of data.sort((a, b) => {
+    // Sort by relevant date in this order: merged_at, closed_at, created_at
+    const dateA = a.merged_at || a.closed_at || a.created_at;
+    const dateB = b.merged_at || b.closed_at || b.created_at;
+    return new Date(dateB) - new Date(dateA);
+  })) {
+    // Choose the most relevant date
+    const date = pr.merged_at ? pr.merged_at.slice(0, 10) : 
+                pr.closed_at ? pr.closed_at.slice(0, 10) : 
+                pr.created_at.slice(0, 10);
+                
+    const type = classifyPR(pr.title);
+    
+    // Determine status class
+    let statusClass = '';
+    if (pr.status && pr.status.toLowerCase() === 'open') {
+      statusClass = 'status-open';
+    } else if (pr.status && pr.status.toLowerCase() === 'merged') {
+      statusClass = 'status-merged';
+    } else {
+      statusClass = 'status-closed';
+    }
+    
+    html += `<tr>
+      <td>${date}</td>
+      <td>${pr.author}</td>
+      <td>${type}</td>
+      <td><span class="${statusClass}">${pr.status || 'Unknown'}</span></td>
+      <td>${pr.title}</td>
+      <td>${pr.repo}</td>
+    </tr>`;
+  }
 
   html += `</tbody></table></body></html>`;
   return html;
