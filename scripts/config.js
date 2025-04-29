@@ -12,19 +12,19 @@ const config = {
     }
   ],
   teamMembers: [
-    "naveen-negi088",
-    "jugal-patel1",
-    "raju-bhupathiraju",
-    "kmistry2103",
-    "busireddynaveen",
-    "animesh445",
+    // "naveen-negi088",
+    // "jugal-patel1",
+    // "raju-bhupathiraju",
+    // "kmistry2103",
+    // "busireddynaveen",
+    // "animesh445",
     "mudebalaji-wbd",
-    "ravishobhit",
-    "balaganesh3093",
-    "ManyamDinesh",
+    // "ravishobhit",
+    // "balaganesh3093",
+    // "ManyamDinesh",
     "PooranSinghwbd"
   ],
-  startDate: "2025-04-04T00:00:00Z",
+  startDate: "2025-04-06T00:00:00Z",
   endDate: "2025-04-25T23:59:00Z"
 };
 module.exports = { config };
